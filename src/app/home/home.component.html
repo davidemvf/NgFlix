@@ -1,0 +1,12 @@
+
+<div *ngFor = "let type of contentTypes" class = "type-wrapper">
+    <h3>{{type}}</h3>
+    <div class = "films-wrapper">
+        <app-film *ngFor="let film of films">
+            <div class="film-item">
+                <!-- <h4>{{film.title}}</h4> -->
+                <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+            </div>
+        </app-film>
+    </div>
+</div>

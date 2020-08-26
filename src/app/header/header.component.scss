@@ -1,0 +1,41 @@
+header {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-link {
+    height: 100%;
+    line-height: 60px;
+    margin-right: 200px;
+}
+
+.netflixLogo {
+    height: 70%;
+}
+
+a {
+    color: lightgray;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+.white {
+    color: white;
+}
+
+.fa-search{
+    color: white;
+    margin-right: 8px;
+}
+
