@@ -2,11 +2,11 @@
     <img class="netflixLogo" src="./assets/images/netflixLogo.png" alt="netflix">
     <div class="nav-link">
         <ul>
-            <li><a (click)="makeActive('home')" [ngClass]= "{white: active === 'home'}" routerLink="/">Home</a></li>
-            <li><a (click)="makeActive('serietv')" [ngClass]= "{white: active === 'serietv'}" routerLink="serieTv">Serie TV</a></li>
-            <li><a (click)="makeActive('film')" [ngClass]= "{white: active === 'film'}">Film</a></li>
-            <li><a (click)="makeActive('nuovi')" [ngClass]= "{white: active === 'nuovi'}">Nuovi arrivi</a></li>
-            <li><a (click)="makeActive('miaLista')" [ngClass]= "{white: active === 'miaLista'}">La mia lista</a></li>
+            <li><a (click)="makeActive('home')" [ngClass]= "{onActive: active === 'home'}" routerLink="/">Home</a></li>
+            <li><a (click)="makeActive('serietv')" [ngClass]= "{onActive: active === 'serietv'}" routerLink="serieTv">Serie TV</a></li>
+            <li><a (click)="makeActive('film')" [ngClass]= "{onActive: active === 'film'}" routerLink="#">Film</a></li>
+            <li><a (click)="makeActive('nuovi')" [ngClass]= "{onActive: active === 'nuovi'}" routerLink="#">Nuovi arrivi</a></li>
+            <li><a (click)="makeActive('miaLista')" [ngClass]= "{onActive: active === 'miaLista'}" routerLink="#">La mia lista</a></li>
         </ul>
     </div>
     <div class="nav-search">

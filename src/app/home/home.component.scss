@@ -6,6 +6,7 @@
   align-items: flex-end; 
 }
 
+
 .type-wrapper {
   height: 350px;
   width: 97%;
@@ -41,14 +42,13 @@
   border: 1px solid var(--scrollbarBG);
 }
 
-h3 {
+.type-title {
     color: white;
     font-size: 19px;
     margin-bottom: 30px;
 }
 
 .film-item {
-  background-color: lightgray;
   border-radius: 4px;
   margin-right: 10px;
   margin-bottom: 5px;

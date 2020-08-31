@@ -1,12 +1,55 @@
+<!-- <div *ngFor = "let type of contentTypes" class = "type-wrapper">
+    <h3 class = "type-title">{{type}}</h3>
+    <div *ngIf = "type === 'I più popolari su Netflix'" class = "films-wrapper">
+        <app-film *ngFor="let film of films" >
+                <div class="film-item">
+                   
+                    <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+                </div>
+        </app-film>
+    </div>
+</div> -->
 
-<div *ngFor = "let type of contentTypes" class = "type-wrapper">
-    <h3>{{type}}</h3>
+<div class = "type-wrapper">
+    <h3 class = "type-title">I più popolari su Netflix</h3>
     <div class = "films-wrapper">
-        <app-film *ngFor="let film of films">
-            <div class="film-item">
-                <!-- <h4>{{film.title}}</h4> -->
-                <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
-            </div>
+        <app-film *ngFor="let film of films" >
+                <div class="film-item">
+                   <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+                </div>
+        </app-film>
+    </div>
+</div>
+
+<div class = "type-wrapper">
+    <h3 class = "type-title">I titoli del momento</h3>
+    <div class = "films-wrapper">
+        <app-film *ngFor="let film of trendContent" >
+                <div class="film-item">
+                   <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+                </div>
+        </app-film>
+    </div>
+</div>
+
+<div class = "type-wrapper">
+    <h3 class = "type-title">Commedie</h3>
+    <div class = "films-wrapper">
+        <app-film *ngFor="let film of comedies" >
+                <div class="film-item">
+                   <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+                </div>
+        </app-film>
+    </div>
+</div>
+
+<div class = "type-wrapper">
+    <h3 class = "type-title">I più brutti</h3>
+    <div class = "films-wrapper">
+        <app-film *ngFor="let film of worsts" >
+                <div class="film-item">
+                   <a href="#"><img [src]="getPath(film.poster_path)" alt=""></a>
+                </div>
         </app-film>
     </div>
 </div>
